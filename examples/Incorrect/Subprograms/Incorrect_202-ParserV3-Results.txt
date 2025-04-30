@@ -1,0 +1,340 @@
+Parsing Incorrect_202.cprl...
+Parsing complete.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "literal": {
+          "symbol": "intLiteral",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 12
+          },
+          "text": "5"
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 7
+          },
+          "text": "i"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ],
+    "subprogDecls": [
+      {
+        "formalParams": [
+          {
+            "relAddr": 0,
+            "isVarParam": true,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 3,
+                "charNumber": 19
+              },
+              "text": "n"
+            },
+            "type": {
+              "name": "Integer",
+              "size": 4
+            }
+          }
+        ],
+        "initialDecls": [],
+        "stmtPart": {
+          "statements": [
+            {
+              "variable": {
+                "decl": {
+                  "relAddr": 0,
+                  "isVarParam": true,
+                  "idToken": {
+                    "symbol": "identifier",
+                    "position": {
+                      "lineNumber": 3,
+                      "charNumber": 19
+                    },
+                    "text": "n"
+                  },
+                  "type": {
+                    "name": "Integer",
+                    "size": 4
+                  }
+                },
+                "indexExprs": [],
+                "exprType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "exprPosition": {
+                  "lineNumber": 5,
+                  "charNumber": 4
+                }
+              },
+              "expr": {
+                "leftOperand": {
+                  "decl": {
+                    "relAddr": 0,
+                    "isVarParam": true,
+                    "idToken": {
+                      "symbol": "identifier",
+                      "position": {
+                        "lineNumber": 3,
+                        "charNumber": 19
+                      },
+                      "text": "n"
+                    },
+                    "type": {
+                      "name": "Integer",
+                      "size": 4
+                    }
+                  },
+                  "indexExprs": [],
+                  "exprType": {
+                    "name": "Integer",
+                    "size": 4
+                  },
+                  "exprPosition": {
+                    "lineNumber": 5,
+                    "charNumber": 9
+                  }
+                },
+                "operator": {
+                  "symbol": "plus",
+                  "position": {
+                    "lineNumber": 5,
+                    "charNumber": 11
+                  },
+                  "text": "+"
+                },
+                "rightOperand": {
+                  "literal": {
+                    "symbol": "intLiteral",
+                    "position": {
+                      "lineNumber": 5,
+                      "charNumber": 13
+                    },
+                    "text": "1"
+                  },
+                  "exprType": {
+                    "name": "Integer",
+                    "size": 4
+                  },
+                  "exprPosition": {
+                    "lineNumber": 5,
+                    "charNumber": 13
+                  }
+                },
+                "exprType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "exprPosition": {
+                  "lineNumber": 5,
+                  "charNumber": 11
+                }
+              },
+              "assignPosition": {
+                "lineNumber": 5,
+                "charNumber": 6
+              }
+            }
+          ]
+        },
+        "varLength": 0,
+        "L1": "L0",
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 3,
+            "charNumber": 11
+          },
+          "text": "inc"
+        },
+        "type": {
+          "name": "none",
+          "size": 0
+        }
+      }
+    ]
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "procId": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 9,
+            "charNumber": 4
+          },
+          "text": "inc"
+        },
+        "actualParams": [
+          {
+            "literal": {
+              "symbol": "intLiteral",
+              "position": {
+                "lineNumber": 1,
+                "charNumber": 12
+              },
+              "text": "5"
+            },
+            "exprType": {
+              "name": "Integer",
+              "size": 4
+            },
+            "exprPosition": {
+              "lineNumber": 9,
+              "charNumber": 8
+            }
+          }
+        ],
+        "procDecl": {
+          "formalParams": [
+            {
+              "relAddr": 0,
+              "isVarParam": true,
+              "idToken": {
+                "symbol": "identifier",
+                "position": {
+                  "lineNumber": 3,
+                  "charNumber": 19
+                },
+                "text": "n"
+              },
+              "type": {
+                "name": "Integer",
+                "size": 4
+              }
+            }
+          ],
+          "initialDecls": [],
+          "stmtPart": {
+            "statements": [
+              {
+                "variable": {
+                  "decl": {
+                    "relAddr": 0,
+                    "isVarParam": true,
+                    "idToken": {
+                      "symbol": "identifier",
+                      "position": {
+                        "lineNumber": 3,
+                        "charNumber": 19
+                      },
+                      "text": "n"
+                    },
+                    "type": {
+                      "name": "Integer",
+                      "size": 4
+                    }
+                  },
+                  "indexExprs": [],
+                  "exprType": {
+                    "name": "Integer",
+                    "size": 4
+                  },
+                  "exprPosition": {
+                    "lineNumber": 5,
+                    "charNumber": 4
+                  }
+                },
+                "expr": {
+                  "leftOperand": {
+                    "decl": {
+                      "relAddr": 0,
+                      "isVarParam": true,
+                      "idToken": {
+                        "symbol": "identifier",
+                        "position": {
+                          "lineNumber": 3,
+                          "charNumber": 19
+                        },
+                        "text": "n"
+                      },
+                      "type": {
+                        "name": "Integer",
+                        "size": 4
+                      }
+                    },
+                    "indexExprs": [],
+                    "exprType": {
+                      "name": "Integer",
+                      "size": 4
+                    },
+                    "exprPosition": {
+                      "lineNumber": 5,
+                      "charNumber": 9
+                    }
+                  },
+                  "operator": {
+                    "symbol": "plus",
+                    "position": {
+                      "lineNumber": 5,
+                      "charNumber": 11
+                    },
+                    "text": "+"
+                  },
+                  "rightOperand": {
+                    "literal": {
+                      "symbol": "intLiteral",
+                      "position": {
+                        "lineNumber": 5,
+                        "charNumber": 13
+                      },
+                      "text": "1"
+                    },
+                    "exprType": {
+                      "name": "Integer",
+                      "size": 4
+                    },
+                    "exprPosition": {
+                      "lineNumber": 5,
+                      "charNumber": 13
+                    }
+                  },
+                  "exprType": {
+                    "name": "Integer",
+                    "size": 4
+                  },
+                  "exprPosition": {
+                    "lineNumber": 5,
+                    "charNumber": 11
+                  }
+                },
+                "assignPosition": {
+                  "lineNumber": 5,
+                  "charNumber": 6
+                }
+              }
+            ]
+          },
+          "varLength": 0,
+          "L1": "L0",
+          "idToken": {
+            "symbol": "identifier",
+            "position": {
+              "lineNumber": 3,
+              "charNumber": 11
+            },
+            "text": "inc"
+          },
+          "type": {
+            "name": "none",
+            "size": 0
+          }
+        }
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L1"
+}

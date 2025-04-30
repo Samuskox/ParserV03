@@ -1,0 +1,10 @@
+Parsing Incorrect_106.cprl...
+*** Syntax error detected near line 5, character 13:
+    Invalid literal expression.
+*** Syntax error detected near line 9, character 9:
+    Identifier "boolean" has not been declared.
+*** Syntax error detected near line 13, character 7:
+    Invalid expression.
+*** Syntax error detected near line 16, character 7:
+    Identifier "d" cannot start a statement.
+Errors detected in Incorrect_106.cprl -- parsing terminated.

@@ -1,0 +1,7 @@
+Starting compilation for Incorrect_303.cprl...
+Checking constraints...
+*** Constraint error detected near line 7, character 11:
+    Index expression must have type Integer.
+*** Constraint error detected near line 8, character 14:
+    Index expression must have type Integer.
+Errors detected in Incorrect_303.cprl -- compilation terminated.

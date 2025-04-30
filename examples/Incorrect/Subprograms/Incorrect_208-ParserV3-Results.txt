@@ -1,0 +1,444 @@
+Parsing Incorrect_208.cprl...
+Parsing complete.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 5
+          },
+          "text": "x"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ],
+    "subprogDecls": [
+      {
+        "formalParams": [],
+        "initialDecls": [
+          {
+            "scopeLevel": "SUBPROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 4,
+                "charNumber": 8
+              },
+              "text": "b"
+            },
+            "type": {
+              "name": "Boolean",
+              "size": 1
+            }
+          }
+        ],
+        "stmtPart": {
+          "statements": [
+            {
+              "variable": {
+                "decl": {
+                  "scopeLevel": "SUBPROGRAM",
+                  "relAddr": 0,
+                  "idToken": {
+                    "symbol": "identifier",
+                    "position": {
+                      "lineNumber": 4,
+                      "charNumber": 8
+                    },
+                    "text": "b"
+                  },
+                  "type": {
+                    "name": "Boolean",
+                    "size": 1
+                  }
+                },
+                "indexExprs": [],
+                "exprType": {
+                  "name": "Boolean",
+                  "size": 1
+                },
+                "exprPosition": {
+                  "lineNumber": 6,
+                  "charNumber": 4
+                }
+              },
+              "expr": {
+                "literal": {
+                  "symbol": "falseRW",
+                  "position": {
+                    "lineNumber": 6,
+                    "charNumber": 9
+                  },
+                  "text": "false"
+                },
+                "exprType": {
+                  "name": "Boolean",
+                  "size": 1
+                },
+                "exprPosition": {
+                  "lineNumber": 6,
+                  "charNumber": 9
+                }
+              },
+              "assignPosition": {
+                "lineNumber": 6,
+                "charNumber": 6
+              }
+            },
+            {
+              "returnExpr": {
+                "leftOperand": {
+                  "decl": {
+                    "scopeLevel": "PROGRAM",
+                    "relAddr": 0,
+                    "idToken": {
+                      "symbol": "identifier",
+                      "position": {
+                        "lineNumber": 1,
+                        "charNumber": 5
+                      },
+                      "text": "x"
+                    },
+                    "type": {
+                      "name": "Integer",
+                      "size": 4
+                    }
+                  },
+                  "indexExprs": [],
+                  "exprType": {
+                    "name": "Integer",
+                    "size": 4
+                  },
+                  "exprPosition": {
+                    "lineNumber": 7,
+                    "charNumber": 11
+                  }
+                },
+                "operator": {
+                  "symbol": "plus",
+                  "position": {
+                    "lineNumber": 7,
+                    "charNumber": 13
+                  },
+                  "text": "+"
+                },
+                "rightOperand": {
+                  "decl": {
+                    "scopeLevel": "SUBPROGRAM",
+                    "relAddr": 0,
+                    "idToken": {
+                      "symbol": "identifier",
+                      "position": {
+                        "lineNumber": 4,
+                        "charNumber": 8
+                      },
+                      "text": "b"
+                    },
+                    "type": {
+                      "name": "Boolean",
+                      "size": 1
+                    }
+                  },
+                  "indexExprs": [],
+                  "exprType": {
+                    "name": "Boolean",
+                    "size": 1
+                  },
+                  "exprPosition": {
+                    "lineNumber": 7,
+                    "charNumber": 15
+                  }
+                },
+                "exprType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "exprPosition": {
+                  "lineNumber": 7,
+                  "charNumber": 13
+                }
+              },
+              "returnPosition": {
+                "lineNumber": 7,
+                "charNumber": 4
+              }
+            }
+          ]
+        },
+        "varLength": 0,
+        "L1": "L0",
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 3,
+            "charNumber": 10
+          },
+          "text": "add"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ]
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 1,
+                "charNumber": 5
+              },
+              "text": "x"
+            },
+            "type": {
+              "name": "Integer",
+              "size": 4
+            }
+          },
+          "indexExprs": [],
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 12,
+            "charNumber": 4
+          }
+        },
+        "expr": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 12,
+              "charNumber": 9
+            },
+            "text": "5"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 12,
+            "charNumber": 9
+          }
+        },
+        "assignPosition": {
+          "lineNumber": 12,
+          "charNumber": 6
+        }
+      },
+      {
+        "expressions": [
+          {
+            "funcId": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 13,
+                "charNumber": 12
+              },
+              "text": "add"
+            },
+            "actualParams": [],
+            "funcDecl": {
+              "formalParams": [],
+              "initialDecls": [
+                {
+                  "scopeLevel": "SUBPROGRAM",
+                  "relAddr": 0,
+                  "idToken": {
+                    "symbol": "identifier",
+                    "position": {
+                      "lineNumber": 4,
+                      "charNumber": 8
+                    },
+                    "text": "b"
+                  },
+                  "type": {
+                    "name": "Boolean",
+                    "size": 1
+                  }
+                }
+              ],
+              "stmtPart": {
+                "statements": [
+                  {
+                    "variable": {
+                      "decl": {
+                        "scopeLevel": "SUBPROGRAM",
+                        "relAddr": 0,
+                        "idToken": {
+                          "symbol": "identifier",
+                          "position": {
+                            "lineNumber": 4,
+                            "charNumber": 8
+                          },
+                          "text": "b"
+                        },
+                        "type": {
+                          "name": "Boolean",
+                          "size": 1
+                        }
+                      },
+                      "indexExprs": [],
+                      "exprType": {
+                        "name": "Boolean",
+                        "size": 1
+                      },
+                      "exprPosition": {
+                        "lineNumber": 6,
+                        "charNumber": 4
+                      }
+                    },
+                    "expr": {
+                      "literal": {
+                        "symbol": "falseRW",
+                        "position": {
+                          "lineNumber": 6,
+                          "charNumber": 9
+                        },
+                        "text": "false"
+                      },
+                      "exprType": {
+                        "name": "Boolean",
+                        "size": 1
+                      },
+                      "exprPosition": {
+                        "lineNumber": 6,
+                        "charNumber": 9
+                      }
+                    },
+                    "assignPosition": {
+                      "lineNumber": 6,
+                      "charNumber": 6
+                    }
+                  },
+                  {
+                    "returnExpr": {
+                      "leftOperand": {
+                        "decl": {
+                          "scopeLevel": "PROGRAM",
+                          "relAddr": 0,
+                          "idToken": {
+                            "symbol": "identifier",
+                            "position": {
+                              "lineNumber": 1,
+                              "charNumber": 5
+                            },
+                            "text": "x"
+                          },
+                          "type": {
+                            "name": "Integer",
+                            "size": 4
+                          }
+                        },
+                        "indexExprs": [],
+                        "exprType": {
+                          "name": "Integer",
+                          "size": 4
+                        },
+                        "exprPosition": {
+                          "lineNumber": 7,
+                          "charNumber": 11
+                        }
+                      },
+                      "operator": {
+                        "symbol": "plus",
+                        "position": {
+                          "lineNumber": 7,
+                          "charNumber": 13
+                        },
+                        "text": "+"
+                      },
+                      "rightOperand": {
+                        "decl": {
+                          "scopeLevel": "SUBPROGRAM",
+                          "relAddr": 0,
+                          "idToken": {
+                            "symbol": "identifier",
+                            "position": {
+                              "lineNumber": 4,
+                              "charNumber": 8
+                            },
+                            "text": "b"
+                          },
+                          "type": {
+                            "name": "Boolean",
+                            "size": 1
+                          }
+                        },
+                        "indexExprs": [],
+                        "exprType": {
+                          "name": "Boolean",
+                          "size": 1
+                        },
+                        "exprPosition": {
+                          "lineNumber": 7,
+                          "charNumber": 15
+                        }
+                      },
+                      "exprType": {
+                        "name": "Integer",
+                        "size": 4
+                      },
+                      "exprPosition": {
+                        "lineNumber": 7,
+                        "charNumber": 13
+                      }
+                    },
+                    "returnPosition": {
+                      "lineNumber": 7,
+                      "charNumber": 4
+                    }
+                  }
+                ]
+              },
+              "varLength": 0,
+              "L1": "L0",
+              "idToken": {
+                "symbol": "identifier",
+                "position": {
+                  "lineNumber": 3,
+                  "charNumber": 10
+                },
+                "text": "add"
+              },
+              "type": {
+                "name": "Integer",
+                "size": 4
+              }
+            },
+            "exprType": {
+              "name": "Integer",
+              "size": 4
+            },
+            "exprPosition": {
+              "lineNumber": 13,
+              "charNumber": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L1"
+}

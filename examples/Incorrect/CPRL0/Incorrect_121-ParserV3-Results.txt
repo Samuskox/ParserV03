@@ -1,0 +1,93 @@
+Parsing Incorrect_121.cprl...
+Parsing complete.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 5
+          },
+          "text": "x"
+        },
+        "type": {
+          "name": "Boolean",
+          "size": 1
+        }
+      }
+    ],
+    "subprogDecls": []
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 1,
+                "charNumber": 5
+              },
+              "text": "x"
+            },
+            "type": {
+              "name": "Boolean",
+              "size": 1
+            }
+          },
+          "indexExprs": [],
+          "exprType": {
+            "name": "Boolean",
+            "size": 1
+          },
+          "exprPosition": {
+            "lineNumber": 5,
+            "charNumber": 9
+          }
+        }
+      },
+      {
+        "expressions": [
+          {
+            "decl": {
+              "scopeLevel": "PROGRAM",
+              "relAddr": 0,
+              "idToken": {
+                "symbol": "identifier",
+                "position": {
+                  "lineNumber": 1,
+                  "charNumber": 5
+                },
+                "text": "x"
+              },
+              "type": {
+                "name": "Boolean",
+                "size": 1
+              }
+            },
+            "indexExprs": [],
+            "exprType": {
+              "name": "Boolean",
+              "size": 1
+            },
+            "exprPosition": {
+              "lineNumber": 6,
+              "charNumber": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L0"
+}

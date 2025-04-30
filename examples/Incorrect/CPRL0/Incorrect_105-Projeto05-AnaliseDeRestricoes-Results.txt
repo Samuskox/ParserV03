@@ -1,0 +1,4 @@
+Starting compilation for Incorrect_105.cprl...
+*** Syntax error detected near line 5, character 9:
+    Identifier "FALSE" has not been declared.
+Errors detected in Incorrect_105.cprl -- compilation terminated.

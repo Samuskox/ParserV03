@@ -1,0 +1,238 @@
+Parsing Incorrect_106.cprl...
+*** Syntax error detected near line 5, character 13:
+    Invalid literal expression.
+*** Syntax error detected near line 9, character 9:
+    Identifier "boolean" has not been declared.
+*** Syntax error detected near line 13, character 7:
+    Invalid expression.
+*** Syntax error detected near line 16, character 7:
+    Identifier "d" cannot start a statement.
+Errors detected in Incorrect_106.cprl -- parsing terminated.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "literal": {
+          "symbol": "intLiteral",
+          "position": {
+            "lineNumber": 3,
+            "charNumber": 12
+          },
+          "text": "1"
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 3,
+            "charNumber": 7
+          },
+          "text": "a"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      },
+      {
+        "literal": {
+          "symbol": "intLiteral",
+          "position": {
+            "lineNumber": 4,
+            "charNumber": 12
+          },
+          "text": "2"
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 4,
+            "charNumber": 7
+          },
+          "text": "b"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      },
+      {
+        "literal": null,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 5,
+            "charNumber": 7
+          },
+          "text": "c"
+        },
+        "type": {
+          "name": "UNKNOWN",
+          "size": 0
+        }
+      },
+      {
+        "literal": {
+          "symbol": "intLiteral",
+          "position": {
+            "lineNumber": 6,
+            "charNumber": 12
+          },
+          "text": "4"
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 6,
+            "charNumber": 7
+          },
+          "text": "d"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      },
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 8,
+            "charNumber": 5
+          },
+          "text": "x"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      },
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 9,
+            "charNumber": 5
+          },
+          "text": "y"
+        },
+        "type": {
+          "name": "UNKNOWN",
+          "size": 0
+        }
+      }
+    ],
+    "subprogDecls": []
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "booleanExpr": {
+          "L1": "L0",
+          "L2": "L1",
+          "leftOperand": null,
+          "operator": {
+            "symbol": "equals",
+            "position": {
+              "lineNumber": 13,
+              "charNumber": 7
+            },
+            "text": "\u003d"
+          },
+          "rightOperand": {
+            "literal": {
+              "symbol": "intLiteral",
+              "position": {
+                "lineNumber": 13,
+                "charNumber": 9
+              },
+              "text": "2"
+            },
+            "exprType": {
+              "name": "Integer",
+              "size": 4
+            },
+            "exprPosition": {
+              "lineNumber": 13,
+              "charNumber": 9
+            }
+          },
+          "exprType": {
+            "name": "Boolean",
+            "size": 1
+          },
+          "exprPosition": {
+            "lineNumber": 13,
+            "charNumber": 7
+          }
+        },
+        "thenStmts": [
+          {
+            "variable": {
+              "decl": {
+                "scopeLevel": "PROGRAM",
+                "relAddr": 0,
+                "idToken": {
+                  "symbol": "identifier",
+                  "position": {
+                    "lineNumber": 8,
+                    "charNumber": 5
+                  },
+                  "text": "x"
+                },
+                "type": {
+                  "name": "Integer",
+                  "size": 4
+                }
+              },
+              "indexExprs": [],
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 14,
+                "charNumber": 7
+              }
+            },
+            "expr": {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 14,
+                  "charNumber": 12
+                },
+                "text": "1"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 14,
+                "charNumber": 12
+              }
+            },
+            "assignPosition": {
+              "lineNumber": 14,
+              "charNumber": 9
+            }
+          }
+        ],
+        "elsifParts": [],
+        "elseStmts": [
+          null
+        ],
+        "L1": "L2",
+        "L2": "L3"
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L4"
+}

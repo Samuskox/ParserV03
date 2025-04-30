@@ -1,0 +1,54 @@
+Parsing Incorrect_128.cprl...
+*** Syntax error detected near line 8, character 1:
+    Expecting "end" but found "and" instead.
+Errors detected in Incorrect_128.cprl -- parsing terminated.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "literal": {
+          "symbol": "intLiteral",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 12
+          },
+          "text": "2"
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 7
+          },
+          "text": "i"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      },
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 2,
+            "charNumber": 5
+          },
+          "text": "x"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ],
+    "subprogDecls": []
+  },
+  "stmtPart": null,
+  "varLength": 0,
+  "L1": "L0"
+}

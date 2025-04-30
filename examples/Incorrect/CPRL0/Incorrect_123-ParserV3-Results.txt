@@ -1,0 +1,252 @@
+Parsing Incorrect_123.cprl...
+*** Lexical error detected near line 8, character 37:
+    Illegal escape character.
+*** Lexical error detected near line 9, character 37:
+    Illegal escape character.
+Errors detected in Incorrect_123.cprl -- parsing terminated.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [],
+    "subprogDecls": []
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "expressions": [
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 4,
+                "charNumber": 12
+              },
+              "text": "\"character with \\\\n: \""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 4,
+              "charNumber": 12
+            }
+          },
+          {
+            "literal": {
+              "symbol": "charLiteral",
+              "position": {
+                "lineNumber": 4,
+                "charNumber": 36
+              },
+              "text": "\u0027\\n\u0027"
+            },
+            "exprType": {
+              "name": "Char",
+              "size": 2
+            },
+            "exprPosition": {
+              "lineNumber": 4,
+              "charNumber": 36
+            }
+          },
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 4,
+                "charNumber": 42
+              },
+              "text": "\"remaining text.\""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 4,
+              "charNumber": 42
+            }
+          }
+        ]
+      },
+      {
+        "expressions": [
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 5,
+                "charNumber": 12
+              },
+              "text": "\"character with \\\\t: \""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 5,
+              "charNumber": 12
+            }
+          },
+          {
+            "literal": {
+              "symbol": "charLiteral",
+              "position": {
+                "lineNumber": 5,
+                "charNumber": 36
+              },
+              "text": "\u0027\\t\u0027"
+            },
+            "exprType": {
+              "name": "Char",
+              "size": 2
+            },
+            "exprPosition": {
+              "lineNumber": 5,
+              "charNumber": 36
+            }
+          },
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 5,
+                "charNumber": 42
+              },
+              "text": "\"remaining text.\""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 5,
+              "charNumber": 42
+            }
+          }
+        ]
+      },
+      {
+        "expressions": [
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 8,
+                "charNumber": 12
+              },
+              "text": "\"character with \\\\a: \""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 8,
+              "charNumber": 12
+            }
+          },
+          {
+            "literal": {
+              "symbol": "charLiteral",
+              "position": {
+                "lineNumber": 8,
+                "charNumber": 36
+              },
+              "text": "\u0027\\a\u0027"
+            },
+            "exprType": {
+              "name": "Char",
+              "size": 2
+            },
+            "exprPosition": {
+              "lineNumber": 8,
+              "charNumber": 36
+            }
+          },
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 8,
+                "charNumber": 42
+              },
+              "text": "\"remaining text.\""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 8,
+              "charNumber": 42
+            }
+          }
+        ]
+      },
+      {
+        "expressions": [
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 9,
+                "charNumber": 12
+              },
+              "text": "\"character with \\\\x: \""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 9,
+              "charNumber": 12
+            }
+          },
+          {
+            "literal": {
+              "symbol": "charLiteral",
+              "position": {
+                "lineNumber": 9,
+                "charNumber": 36
+              },
+              "text": "\u0027\\x\u0027"
+            },
+            "exprType": {
+              "name": "Char",
+              "size": 2
+            },
+            "exprPosition": {
+              "lineNumber": 9,
+              "charNumber": 36
+            }
+          },
+          {
+            "literal": {
+              "symbol": "stringLiteral",
+              "position": {
+                "lineNumber": 9,
+                "charNumber": 42
+              },
+              "text": "\"remaining text.\""
+            },
+            "exprType": {
+              "name": "String",
+              "size": 0
+            },
+            "exprPosition": {
+              "lineNumber": 9,
+              "charNumber": 42
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L0"
+}

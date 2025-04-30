@@ -1,0 +1,69 @@
+Parsing Incorrect_105.cprl...
+*** Syntax error detected near line 5, character 9:
+    Identifier "FALSE" has not been declared.
+Errors detected in Incorrect_105.cprl -- parsing terminated.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 5
+          },
+          "text": "b"
+        },
+        "type": {
+          "name": "Boolean",
+          "size": 1
+        }
+      }
+    ],
+    "subprogDecls": []
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 1,
+                "charNumber": 5
+              },
+              "text": "b"
+            },
+            "type": {
+              "name": "Boolean",
+              "size": 1
+            }
+          },
+          "indexExprs": [],
+          "exprType": {
+            "name": "Boolean",
+            "size": 1
+          },
+          "exprPosition": {
+            "lineNumber": 5,
+            "charNumber": 4
+          }
+        },
+        "expr": null,
+        "assignPosition": {
+          "lineNumber": 5,
+          "charNumber": 6
+        }
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L0"
+}

@@ -1,0 +1,8 @@
+Starting compilation for Incorrect_205.cprl...
+*** Syntax error detected near line 3, character 7:
+    Expecting ":" but found "=" instead.
+*** Syntax error detected near line 21, character 4:
+    Identifier "n" has not been declared.
+*** Syntax error detected near line 22, character 10:
+    Identifier "n" has not been declared.
+Errors detected in Incorrect_205.cprl -- compilation terminated.

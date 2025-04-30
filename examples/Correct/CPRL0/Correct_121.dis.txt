@@ -1,0 +1,36 @@
+   0:  PROGRAM 8
+   5:  LDGADDR 0
+  10:  LDCINT 5
+  15:  STOREW
+  16:  LDGADDR 4
+  21:  LDCINT0
+  22:  STOREW
+  23:  LDGADDR 4
+  28:  LOADW
+  29:  LDCINT0
+  30:  CMP
+  31:  BNZ 11
+  36:  LDCB0
+  37:  BR 36
+  42:  LDGADDR 0
+  47:  LOADW
+  48:  LDGADDR 4
+  53:  LOADW
+  54:  DIV
+  55:  LDCINT 10
+  60:  CMP
+  61:  BGE 11
+  66:  LDCB1
+  67:  BR 6
+  72:  LDCB0
+  73:  BZ 18
+  78:  LDGADDR 0
+  83:  LOADW
+  84:  PUTINT
+  85:  PUTEOL
+  86:  BR 13
+  91:  LDGADDR 4
+  96:  LOADW
+  97:  PUTINT
+  98:  PUTEOL
+  99:  HALT
