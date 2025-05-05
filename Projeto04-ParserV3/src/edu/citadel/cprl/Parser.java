@@ -285,34 +285,46 @@ public class Parser {
         // código do parser esperado para o Projeto 03
         try {
             
-            
+            Token arrayTypeId = null;
+
+            Type elemType = null;
             
             match( Symbol.typeRW );
-            
-            List<Token> identifiers = parseIdentifiers();
 
-            for ( Token identifier : identifiers ) {
-                idTable.add( identifier, IdType.arrayTypeId );
-            }
+
+            arrayTypeId = scanner.getToken();
+            
+            //List<Token> identifiers = parseIdentifiers();
+            //PRA QUE??
+            // for ( Token identifier : identifiers ) {
+            //     idTable.add( identifier, IdType.arrayTypeId );
+            // }
             
             match( Symbol.equals );
             match( Symbol.arrayRW );
             match( Symbol.leftBracket );
+
+            ConstValue numElem = parseConstValue();
             
-            if ( scanner.getSymbol() == Symbol.intLiteral ) {
-                matchCurrentSymbol();
-            } else {
-                throw error( "Invalid constant." );
+            if (numElem == null  ) {
+                numElem = new ConstValue( new Token( Symbol.intLiteral, scanner.getPosition(), "0" ) );
+                //matchCurrentSymbol();
             }
             
             match( Symbol.rightBracket );
             match( Symbol.ofRW );
-            parseTypeName();
+            elemType = parseTypeName();
             match( Symbol.semicolon );
+
+            ArrayTypeDecl arrayTypeDecl = new ArrayTypeDecl(arrayTypeId, elemType, numElem);
+            idTable.add(arrayTypeDecl);
+            return arrayTypeDecl;
             
         } catch ( ParserException e ) {
             ErrorHandler.getInstance().reportError( e );
             recover( FOLLOW_SETS.get( "arrayTypeDecl" ) );
+
+            return null;
         }
  /* Dica: Se parseConstValue() returnar um valor null, crie um token 
          * "boneco" para o ConstValue evitando assim erros adicionais associados 
@@ -326,7 +338,7 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
+
 
     }
 
@@ -388,10 +400,13 @@ public class Parser {
      */
     public List<SubprogramDecl> parseSubprogramDecls() throws IOException {
 
+
+        List<SubprogramDecl> listSubprogramDecls = new ArrayList<>();
         // código do parser esperado para o Projeto 03
-        /*while ( scanner.getSymbol().isSubprogramDeclStarter() ) {
-            parseSubprogramDecl();
-        }*/
+        while ( scanner.getSymbol().isSubprogramDeclStarter() ) {
+            listSubprogramDecls.add(parseSubprogramDecl());
+            
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -399,7 +414,7 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
+        return listSubprogramDecls;
 
     }
 
@@ -409,15 +424,15 @@ public class Parser {
      * subprogramDecl = procedureDecl | functionDecl .
      */
     public SubprogramDecl parseSubprogramDecl() throws IOException {
-
+        
         // código do parser esperado para o Projeto 03
-        /*if ( scanner.getSymbol() == Symbol.procedureRW ) {
-            parseProcedureDecl();
+        if ( scanner.getSymbol() == Symbol.procedureRW ) {
+            return parseProcedureDecl();
         } else if ( scanner.getSymbol() == Symbol.functionRW ) {
-            parseFunctionDecl();
+            return parseFunctionDecl();
         } else {
             throw internalError( "Invalid subprogram decl." );
-        }*/
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -425,8 +440,6 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
-
     }
 
     /**
@@ -486,16 +499,17 @@ public class Parser {
     public FunctionDecl parseFunctionDecl() throws IOException {
 
         // código do parser esperado para o Projeto 03
-        /*try {
+        try {
             
             match( Symbol.functionRW );
             Token funcId = scanner.getToken();
+            FunctionDecl functionDecl = new FunctionDecl(funcId);
             match( Symbol.identifier );
-            idTable.add( funcId, IdType.functionId );
+            idTable.add(functionDecl );
             idTable.openScope();
             
             if ( scanner.getSymbol() == Symbol.leftParen ) {
-                parseFormalParameters();
+                functionDecl.setFormalParams(parseFormalParameters());
             }
             
             match( Symbol.returnRW );
@@ -519,7 +533,9 @@ public class Parser {
         } catch ( ParserException e ) {
             ErrorHandler.getInstance().reportError( e );
             recover( FOLLOW_SETS.get( "functionDecl" ) );
-        }*/
+
+            return null;
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -527,7 +543,7 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
+        
 
     }
 
