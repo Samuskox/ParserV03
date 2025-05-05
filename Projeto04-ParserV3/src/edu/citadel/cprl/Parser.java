@@ -539,23 +539,26 @@ public class Parser {
     public List<ParameterDecl> parseFormalParameters() throws IOException {
 
         // código do parser esperado para o Projeto 03
-        /*try {
+        try {
+            ArrayList<ParameterDecl> parameterDecls = new ArrayList<>();
             
             match( Symbol.leftParen );
             
-            parseParameterDecl();
+            parameterDecls.add(parseParameterDecl());
             
             while ( scanner.getSymbol() == Symbol.comma ) {
                 matchCurrentSymbol();
-                parseParameterDecl();
+                parameterDecls.add(parseParameterDecl());
             }
             
             match( Symbol.rightParen );
+            return parameterDecls;
             
         } catch ( ParserException e ) {
             ErrorHandler.getInstance().reportError( e );
             recover( FOLLOW_SETS.get( "formalParameters" ) );
-        }*/
+            return null;
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -563,7 +566,6 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
 
     }
 
@@ -575,24 +577,31 @@ public class Parser {
     public ParameterDecl parseParameterDecl() throws IOException {
 
         // código do parser esperado para o Projeto 03
-        /*try {
-            
+        try {
+            Token paramId = null;
+            Type type = null;
+            boolean isVar = false;
             if ( scanner.getSymbol() == Symbol.varRW ) {
                 matchCurrentSymbol();
+                isVar = true;
             }
             
-            Token paramId = scanner.getToken();
+            paramId = scanner.getToken();
             match( Symbol.identifier );
-            idTable.add( paramId, IdType.variableId );
             
             match( Symbol.colon );
             
-            parseTypeName();
+            type = parseTypeName();
+
+            ParameterDecl parameterDecl = new ParameterDecl(paramId, type, isVar);
+            idTable.add(parameterDecl);
+            return parameterDecl;
             
         } catch ( ParserException e ) {
             ErrorHandler.getInstance().reportError( e );
             recover( FOLLOW_SETS.get( "parameterDecl" ) );
-        }*/
+            return null;
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -600,7 +609,6 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
 
     }
 
