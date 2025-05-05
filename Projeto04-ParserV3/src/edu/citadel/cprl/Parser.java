@@ -108,7 +108,7 @@ public class Parser {
     public InitialDecl parseInitialDecl() throws IOException {
 
         // código do parser esperado para o Projeto 03
-        if (scanner.getSymbol() == Symbol.constRW) {;;
+        if (scanner.getSymbol() == Symbol.constRW) {
             return parseConstDecl();
         } else if (scanner.getSymbol() == Symbol.typeRW) {
             return parseArrayTypeDecl();
@@ -656,9 +656,10 @@ public class Parser {
     public List<Statement> parseStatements() throws IOException {
 
         // código do parser esperado para o Projeto 03
-        /*while ( scanner.getSymbol().isStmtStarter() ) {
-            parseStatement();
-        }*/
+        ArrayList<Statement> statements = new ArrayList<>();
+        while ( scanner.getSymbol().isStmtStarter() ) {
+            statements.add(parseStatement());
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -666,7 +667,7 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
+        return statements;
 
     }
 
@@ -682,42 +683,42 @@ public class Parser {
         assert scanner.getSymbol().isStmtStarter() : "Invalid statement.";
 
         // código do parser esperado para o Projeto 03
-        /*try {
+        try {
             
             if ( scanner.getSymbol() == Symbol.exitRW ) {
-                parseExitStmt();
+                return parseExitStmt();
             } else if ( scanner.getSymbol() == Symbol.identifier ) {
                 
-                IdType idType = idTable.get( scanner.getToken() );
+                Declaration declaration = idTable.get( scanner.getToken() );
                 
-                if ( idType == null ) {
+                if ( declaration == null ) {
                     String errorMsg = "Identifier \"" + scanner.getToken() + 
                                       "\" has not been declared.";
                     throw error( scanner.getToken().getPosition(), errorMsg );
-                } else if ( idType == IdType.variableId ) {
-                    parseAssignmentStmt();
-                } else if ( idType == IdType.procedureId ) {
-                    parseProcedureCallStmt();
-                } else if ( idType == IdType.constantId ) {
+                } else if ( declaration instanceof VarDecl ) {
+                    return parseAssignmentStmt();
+                } else if ( declaration instanceof ProcedureDecl ) {
+                    return parseProcedureCallStmt();
+                } else if ( declaration instanceof ConstDecl ) {
                     String errorMsg = "Identifier \"" + scanner.getToken() + 
                                       "\" cannot start a statement.";
                     throw error( scanner.getToken().getPosition(), errorMsg );
                 }
 
             } else if ( scanner.getSymbol() == Symbol.ifRW ) {
-                parseIfStmt();
+                return parseIfStmt();
             } else if ( scanner.getSymbol() == Symbol.loopRW ) {
-                parseLoopStmt();
+                return parseLoopStmt();
             } else if ( scanner.getSymbol() == Symbol.whileRW ) {
-                parseLoopStmt();
+                return parseLoopStmt();
             } else if ( scanner.getSymbol() == Symbol.readRW ) {
-                parseReadStmt();
+                return parseReadStmt();
             } else if ( scanner.getSymbol() == Symbol.writeRW ) {
-                parseWriteStmt();
+                return parseWriteStmt();
             } else if ( scanner.getSymbol() == Symbol.writelnRW ) {
-                parseWritelnStmt();
+                return parseWritelnStmt();
             } else if ( scanner.getSymbol() == Symbol.returnRW ) {
-                parseReturnStmt();
+                return parseReturnStmt();
             } else {
                 throw internalError( "Invalid statement." );
             }
@@ -726,7 +727,8 @@ public class Parser {
             ErrorHandler.getInstance().reportError( e );
             scanner.advanceTo( Symbol.semicolon );
             recover( FOLLOW_SETS.get( "statement" ) );
-        }*/
+            return null;
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -734,7 +736,6 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
 
     }
 
