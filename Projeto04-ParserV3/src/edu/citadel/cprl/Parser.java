@@ -514,11 +514,13 @@ public class Parser {
             
             match( Symbol.returnRW );
             
-            parseTypeName();
+            functionDecl.setType(parseTypeName());
             
             match( Symbol.isRW );
-            parseInitialDecls();
-            parseStatementPart();
+            functionDecl.setInitialDecls(parseInitialDecls());
+            functionDecl.setStatementPart(parseStatementPart());
+        
+  
             idTable.closeScope();
 
             Token procId2 = scanner.getToken();
@@ -529,6 +531,7 @@ public class Parser {
             }
 
             match( Symbol.semicolon );
+            return functionDecl;
             
         } catch ( ParserException e ) {
             ErrorHandler.getInstance().reportError( e );
@@ -745,14 +748,20 @@ public class Parser {
      */
     public AssignmentStmt parseAssignmentStmt() throws IOException {
 
+        
+
+        
+        Expression  expression = null;
+        Position position = null;
         // código do parser esperado para o Projeto 03
-        /*try {
-            
-            parseVariable();
+        try {
+            Variable variable = parseVariable();
             
             try {
                 
+                position = scanner.getPosition();
                 match( Symbol.assign );
+                
                 
             } catch ( ParserException e ) {
                 
@@ -763,16 +772,25 @@ public class Parser {
                 } else {
                     throw e;
                 }
+
+                
+                
+                
                 
             }
             
-            parseExpression();
+            expression = parseExpression();
             match( Symbol.semicolon );
+
+            AssignmentStmt assignmentStmt = new AssignmentStmt(variable, expression, position );
+
+            return assignmentStmt;
             
         } catch ( ParserException e ) {
             ErrorHandler.getInstance().reportError( e );
             recover( FOLLOW_SETS.get( "assignmentStmt" ) );
-        }*/
+            return null;
+        }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
         // </editor-fold>
@@ -780,7 +798,7 @@ public class Parser {
          * ela deve ser modificada para que o seja feito o que é esperado
          * seja inserindo-a em outra posição etc.
          */
-        return null;
+        
 
     }
 
