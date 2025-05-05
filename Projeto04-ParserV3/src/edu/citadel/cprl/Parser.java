@@ -706,6 +706,8 @@ public class Parser {
                     String errorMsg = "Identifier \"" + scanner.getToken() + 
                                       "\" cannot start a statement.";
                     throw error( scanner.getToken().getPosition(), errorMsg );
+                } else {
+                    return null;
                 }
 
             } else if ( scanner.getSymbol() == Symbol.ifRW ) {
@@ -724,6 +726,7 @@ public class Parser {
                 return parseReturnStmt();
             } else {
                 throw internalError( "Invalid statement." );
+                
             }
         
         } catch ( ParserException e ) {
