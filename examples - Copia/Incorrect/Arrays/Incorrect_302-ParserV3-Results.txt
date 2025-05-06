@@ -1,0 +1,618 @@
+Parsing Incorrect_302.cprl...
+Parsing complete.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "numElements": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 1,
+              "charNumber": 16
+            },
+            "text": "10"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 1,
+            "charNumber": 16
+          }
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 6
+          },
+          "text": "T"
+        },
+        "type": {
+          "numElements": 10,
+          "elementType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "name": "T",
+          "size": 40
+        }
+      },
+      {
+        "numElements": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 2,
+              "charNumber": 17
+            },
+            "text": "10"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 2,
+            "charNumber": 17
+          }
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 2,
+            "charNumber": 6
+          },
+          "text": "T1"
+        },
+        "type": {
+          "numElements": 10,
+          "elementType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "name": "T1",
+          "size": 40
+        }
+      },
+      {
+        "numElements": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 3,
+              "charNumber": 17
+            },
+            "text": "10"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 3,
+            "charNumber": 17
+          }
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 3,
+            "charNumber": 6
+          },
+          "text": "T2"
+        },
+        "type": {
+          "numElements": 10,
+          "elementType": {
+            "numElements": 10,
+            "elementType": {
+              "name": "Integer",
+              "size": 4
+            },
+            "name": "T1",
+            "size": 40
+          },
+          "name": "T2",
+          "size": 400
+        }
+      },
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 5,
+            "charNumber": 5
+          },
+          "text": "a"
+        },
+        "type": {
+          "numElements": 10,
+          "elementType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "name": "T",
+          "size": 40
+        }
+      },
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 6,
+            "charNumber": 5
+          },
+          "text": "b"
+        },
+        "type": {
+          "numElements": 10,
+          "elementType": {
+            "numElements": 10,
+            "elementType": {
+              "name": "Integer",
+              "size": 4
+            },
+            "name": "T1",
+            "size": 40
+          },
+          "name": "T2",
+          "size": 400
+        }
+      },
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 7,
+            "charNumber": 5
+          },
+          "text": "c"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ],
+    "subprogDecls": []
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 5,
+                "charNumber": 5
+              },
+              "text": "a"
+            },
+            "type": {
+              "numElements": 10,
+              "elementType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "name": "T",
+              "size": 40
+            }
+          },
+          "indexExprs": [
+            {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 11,
+                  "charNumber": 7
+                },
+                "text": "1"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 11,
+                "charNumber": 7
+              }
+            },
+            {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 11,
+                  "charNumber": 10
+                },
+                "text": "2"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 11,
+                "charNumber": 10
+              }
+            }
+          ],
+          "exprType": {
+            "numElements": 10,
+            "elementType": {
+              "name": "Integer",
+              "size": 4
+            },
+            "name": "T",
+            "size": 40
+          },
+          "exprPosition": {
+            "lineNumber": 11,
+            "charNumber": 5
+          }
+        },
+        "expr": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 11,
+              "charNumber": 16
+            },
+            "text": "3"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 11,
+            "charNumber": 16
+          }
+        },
+        "assignPosition": {
+          "lineNumber": 11,
+          "charNumber": 13
+        }
+      },
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 6,
+                "charNumber": 5
+              },
+              "text": "b"
+            },
+            "type": {
+              "numElements": 10,
+              "elementType": {
+                "numElements": 10,
+                "elementType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "name": "T1",
+                "size": 40
+              },
+              "name": "T2",
+              "size": 400
+            }
+          },
+          "indexExprs": [
+            {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 12,
+                  "charNumber": 7
+                },
+                "text": "1"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 12,
+                "charNumber": 7
+              }
+            }
+          ],
+          "exprType": {
+            "numElements": 10,
+            "elementType": {
+              "numElements": 10,
+              "elementType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "name": "T1",
+              "size": 40
+            },
+            "name": "T2",
+            "size": 400
+          },
+          "exprPosition": {
+            "lineNumber": 12,
+            "charNumber": 5
+          }
+        },
+        "expr": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 12,
+              "charNumber": 13
+            },
+            "text": "3"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 12,
+            "charNumber": 13
+          }
+        },
+        "assignPosition": {
+          "lineNumber": 12,
+          "charNumber": 10
+        }
+      },
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 7,
+                "charNumber": 5
+              },
+              "text": "c"
+            },
+            "type": {
+              "name": "Integer",
+              "size": 4
+            }
+          },
+          "indexExprs": [],
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 13,
+            "charNumber": 5
+          }
+        },
+        "expr": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 6,
+                "charNumber": 5
+              },
+              "text": "b"
+            },
+            "type": {
+              "numElements": 10,
+              "elementType": {
+                "numElements": 10,
+                "elementType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "name": "T1",
+                "size": 40
+              },
+              "name": "T2",
+              "size": 400
+            }
+          },
+          "indexExprs": [
+            {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 13,
+                  "charNumber": 12
+                },
+                "text": "1"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 13,
+                "charNumber": 12
+              }
+            },
+            {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 13,
+                  "charNumber": 15
+                },
+                "text": "2"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 13,
+                "charNumber": 15
+              }
+            },
+            {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 13,
+                  "charNumber": 18
+                },
+                "text": "3"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 13,
+                "charNumber": 18
+              }
+            }
+          ],
+          "exprType": {
+            "numElements": 10,
+            "elementType": {
+              "numElements": 10,
+              "elementType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "name": "T1",
+              "size": 40
+            },
+            "name": "T2",
+            "size": 400
+          },
+          "exprPosition": {
+            "lineNumber": 13,
+            "charNumber": 10
+          }
+        },
+        "assignPosition": {
+          "lineNumber": 13,
+          "charNumber": 7
+        }
+      },
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 7,
+                "charNumber": 5
+              },
+              "text": "c"
+            },
+            "type": {
+              "name": "Integer",
+              "size": 4
+            }
+          },
+          "indexExprs": [],
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 14,
+            "charNumber": 5
+          }
+        },
+        "expr": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 6,
+                "charNumber": 5
+              },
+              "text": "b"
+            },
+            "type": {
+              "numElements": 10,
+              "elementType": {
+                "numElements": 10,
+                "elementType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "name": "T1",
+                "size": 40
+              },
+              "name": "T2",
+              "size": 400
+            }
+          },
+          "indexExprs": [
+            {
+              "literal": {
+                "symbol": "intLiteral",
+                "position": {
+                  "lineNumber": 14,
+                  "charNumber": 12
+                },
+                "text": "1"
+              },
+              "exprType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "exprPosition": {
+                "lineNumber": 14,
+                "charNumber": 12
+              }
+            }
+          ],
+          "exprType": {
+            "numElements": 10,
+            "elementType": {
+              "numElements": 10,
+              "elementType": {
+                "name": "Integer",
+                "size": 4
+              },
+              "name": "T1",
+              "size": 40
+            },
+            "name": "T2",
+            "size": 400
+          },
+          "exprPosition": {
+            "lineNumber": 14,
+            "charNumber": 10
+          }
+        },
+        "assignPosition": {
+          "lineNumber": 14,
+          "charNumber": 7
+        }
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L0"
+}

@@ -1,0 +1,268 @@
+Parsing Incorrect_219.cprl...
+Parsing complete.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [],
+    "subprogDecls": [
+      {
+        "formalParams": [],
+        "initialDecls": [
+          {
+            "scopeLevel": "SUBPROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 2,
+                "charNumber": 9
+              },
+              "text": "x"
+            },
+            "type": {
+              "name": "Integer",
+              "size": 4
+            }
+          }
+        ],
+        "stmtPart": {
+          "statements": [
+            {
+              "variable": {
+                "decl": {
+                  "scopeLevel": "SUBPROGRAM",
+                  "relAddr": 0,
+                  "idToken": {
+                    "symbol": "identifier",
+                    "position": {
+                      "lineNumber": 2,
+                      "charNumber": 9
+                    },
+                    "text": "x"
+                  },
+                  "type": {
+                    "name": "Integer",
+                    "size": 4
+                  }
+                },
+                "indexExprs": [],
+                "exprType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "exprPosition": {
+                  "lineNumber": 4,
+                  "charNumber": 5
+                }
+              },
+              "expr": {
+                "literal": {
+                  "symbol": "charLiteral",
+                  "position": {
+                    "lineNumber": 4,
+                    "charNumber": 10
+                  },
+                  "text": "\u0027X\u0027"
+                },
+                "exprType": {
+                  "name": "Char",
+                  "size": 2
+                },
+                "exprPosition": {
+                  "lineNumber": 4,
+                  "charNumber": 10
+                }
+              },
+              "assignPosition": {
+                "lineNumber": 4,
+                "charNumber": 7
+              }
+            },
+            {
+              "returnExpr": {
+                "literal": {
+                  "symbol": "intLiteral",
+                  "position": {
+                    "lineNumber": 5,
+                    "charNumber": 12
+                  },
+                  "text": "1"
+                },
+                "exprType": {
+                  "name": "Integer",
+                  "size": 4
+                },
+                "exprPosition": {
+                  "lineNumber": 5,
+                  "charNumber": 12
+                }
+              },
+              "returnPosition": {
+                "lineNumber": 5,
+                "charNumber": 5
+              }
+            }
+          ]
+        },
+        "varLength": 0,
+        "L1": "L0",
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 10
+          },
+          "text": "f"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ]
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "expressions": [
+          {
+            "funcId": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 9,
+                "charNumber": 12
+              },
+              "text": "f"
+            },
+            "actualParams": [],
+            "funcDecl": {
+              "formalParams": [],
+              "initialDecls": [
+                {
+                  "scopeLevel": "SUBPROGRAM",
+                  "relAddr": 0,
+                  "idToken": {
+                    "symbol": "identifier",
+                    "position": {
+                      "lineNumber": 2,
+                      "charNumber": 9
+                    },
+                    "text": "x"
+                  },
+                  "type": {
+                    "name": "Integer",
+                    "size": 4
+                  }
+                }
+              ],
+              "stmtPart": {
+                "statements": [
+                  {
+                    "variable": {
+                      "decl": {
+                        "scopeLevel": "SUBPROGRAM",
+                        "relAddr": 0,
+                        "idToken": {
+                          "symbol": "identifier",
+                          "position": {
+                            "lineNumber": 2,
+                            "charNumber": 9
+                          },
+                          "text": "x"
+                        },
+                        "type": {
+                          "name": "Integer",
+                          "size": 4
+                        }
+                      },
+                      "indexExprs": [],
+                      "exprType": {
+                        "name": "Integer",
+                        "size": 4
+                      },
+                      "exprPosition": {
+                        "lineNumber": 4,
+                        "charNumber": 5
+                      }
+                    },
+                    "expr": {
+                      "literal": {
+                        "symbol": "charLiteral",
+                        "position": {
+                          "lineNumber": 4,
+                          "charNumber": 10
+                        },
+                        "text": "\u0027X\u0027"
+                      },
+                      "exprType": {
+                        "name": "Char",
+                        "size": 2
+                      },
+                      "exprPosition": {
+                        "lineNumber": 4,
+                        "charNumber": 10
+                      }
+                    },
+                    "assignPosition": {
+                      "lineNumber": 4,
+                      "charNumber": 7
+                    }
+                  },
+                  {
+                    "returnExpr": {
+                      "literal": {
+                        "symbol": "intLiteral",
+                        "position": {
+                          "lineNumber": 5,
+                          "charNumber": 12
+                        },
+                        "text": "1"
+                      },
+                      "exprType": {
+                        "name": "Integer",
+                        "size": 4
+                      },
+                      "exprPosition": {
+                        "lineNumber": 5,
+                        "charNumber": 12
+                      }
+                    },
+                    "returnPosition": {
+                      "lineNumber": 5,
+                      "charNumber": 5
+                    }
+                  }
+                ]
+              },
+              "varLength": 0,
+              "L1": "L0",
+              "idToken": {
+                "symbol": "identifier",
+                "position": {
+                  "lineNumber": 1,
+                  "charNumber": 10
+                },
+                "text": "f"
+              },
+              "type": {
+                "name": "Integer",
+                "size": 4
+              }
+            },
+            "exprType": {
+              "name": "Integer",
+              "size": 4
+            },
+            "exprPosition": {
+              "lineNumber": 9,
+              "charNumber": 12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "varLength": 0,
+  "L1": "L1"
+}

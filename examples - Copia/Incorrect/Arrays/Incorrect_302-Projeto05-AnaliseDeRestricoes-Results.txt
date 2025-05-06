@@ -1,0 +1,11 @@
+Starting compilation for Incorrect_302.cprl...
+Checking constraints...
+*** Constraint error detected near line 11, character 10:
+    Index expression not allowed; not an array.
+*** Constraint error detected near line 12, character 10:
+    Type mismatch for assignment statement.
+*** Constraint error detected near line 13, character 18:
+    Index expression not allowed; not an array.
+*** Constraint error detected near line 14, character 7:
+    Type mismatch for assignment statement.
+Errors detected in Incorrect_302.cprl -- compilation terminated.

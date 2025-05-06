@@ -752,7 +752,7 @@ public class Parser {
      */
     public AssignmentStmt parseAssignmentStmt() throws IOException {
         Expression  expression = null;
-        Position position = null;
+        Position position = null; //TODO OQUE EU FAÇOAQQQQ????
         // código do parser esperado para o Projeto 03
         try {
             Variable variable = parseVariable();
@@ -779,6 +779,7 @@ public class Parser {
             match( Symbol.semicolon );
 
             AssignmentStmt assignmentStmt = new AssignmentStmt(variable, expression, position );
+            
 
             return assignmentStmt;
             

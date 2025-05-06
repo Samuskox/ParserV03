@@ -1,0 +1,6 @@
+Parsing Incorrect_122.cprl...
+*** Lexical error detected near line 8, character 30:
+    Illegal escape character.
+*** Lexical error detected near line 9, character 30:
+    Illegal escape character.
+Errors detected in Incorrect_122.cprl -- parsing terminated.

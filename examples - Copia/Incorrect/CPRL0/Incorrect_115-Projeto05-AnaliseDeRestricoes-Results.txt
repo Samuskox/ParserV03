@@ -1,0 +1,6 @@
+Starting compilation for Incorrect_115.cprl...
+*** Syntax error detected near line 7, character 6:
+    Expecting ":=" but found "=" instead.
+*** Syntax error detected near line 8, character 4:
+    Identifier "five" cannot start a statement.
+Errors detected in Incorrect_115.cprl -- compilation terminated.

@@ -1,0 +1,109 @@
+Parsing Incorrect_103.cprl...
+*** Syntax error detected near line 7, character 4:
+    Identifier "i" cannot start a statement.
+Errors detected in Incorrect_103.cprl -- parsing terminated.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "literal": {
+          "symbol": "intLiteral",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 12
+          },
+          "text": "5"
+        },
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 7
+          },
+          "text": "i"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      },
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 2,
+            "charNumber": 5
+          },
+          "text": "x"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ],
+    "subprogDecls": []
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 2,
+                "charNumber": 5
+              },
+              "text": "x"
+            },
+            "type": {
+              "name": "Integer",
+              "size": 4
+            }
+          },
+          "indexExprs": [],
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 6,
+            "charNumber": 4
+          }
+        },
+        "expr": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 6,
+              "charNumber": 9
+            },
+            "text": "2"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 6,
+            "charNumber": 9
+          }
+        },
+        "assignPosition": {
+          "lineNumber": 6,
+          "charNumber": 6
+        }
+      },
+      null
+    ]
+  },
+  "varLength": 0,
+  "L1": "L0"
+}

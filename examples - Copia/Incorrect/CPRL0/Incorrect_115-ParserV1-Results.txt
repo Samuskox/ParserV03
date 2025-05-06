@@ -1,0 +1,4 @@
+Parsing Incorrect_115.cprl...
+*** Syntax error detected near line 7, character 6:
+    Expecting ":=" but found "=" instead.
+Errors detected -- parsing terminated.

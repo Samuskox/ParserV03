@@ -1,0 +1,87 @@
+Parsing Incorrect_111.cprl...
+*** Syntax error detected near line 6, character 4:
+    Exit statement is not nested within a loop.
+Errors detected in Incorrect_111.cprl -- parsing terminated.
+
+*** AST Dump ***
+Program: {
+  "declPart": {
+    "initialDecls": [
+      {
+        "scopeLevel": "PROGRAM",
+        "relAddr": 0,
+        "idToken": {
+          "symbol": "identifier",
+          "position": {
+            "lineNumber": 1,
+            "charNumber": 5
+          },
+          "text": "x"
+        },
+        "type": {
+          "name": "Integer",
+          "size": 4
+        }
+      }
+    ],
+    "subprogDecls": []
+  },
+  "stmtPart": {
+    "statements": [
+      {
+        "variable": {
+          "decl": {
+            "scopeLevel": "PROGRAM",
+            "relAddr": 0,
+            "idToken": {
+              "symbol": "identifier",
+              "position": {
+                "lineNumber": 1,
+                "charNumber": 5
+              },
+              "text": "x"
+            },
+            "type": {
+              "name": "Integer",
+              "size": 4
+            }
+          },
+          "indexExprs": [],
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 5,
+            "charNumber": 4
+          }
+        },
+        "expr": {
+          "literal": {
+            "symbol": "intLiteral",
+            "position": {
+              "lineNumber": 5,
+              "charNumber": 9
+            },
+            "text": "12"
+          },
+          "exprType": {
+            "name": "Integer",
+            "size": 4
+          },
+          "exprPosition": {
+            "lineNumber": 5,
+            "charNumber": 9
+          }
+        },
+        "assignPosition": {
+          "lineNumber": 5,
+          "charNumber": 6
+        }
+      },
+      null
+    ]
+  },
+  "varLength": 0,
+  "L1": "L2"
+}
