@@ -675,10 +675,10 @@ public class Parser {
     public Statement parseStatement() throws IOException {
 
         // assume que scanner.getSymbol() pode iniciar uma instrução
-         assert scanner.getSymbol().isStmtStarter() : "Invalid statement.";
+        assert scanner.getSymbol().isStmtStarter() : "Invalid statement.";
 
         // código do parser esperado para o Projeto 03
-       try {
+        try {
             if (scanner.getSymbol() == Symbol.exitRW) {
                 return parseExitStmt();
             } else if (scanner.getSymbol() == Symbol.identifier) {
@@ -716,7 +716,6 @@ public class Parser {
             scanner.advanceTo(Symbol.semicolon);
             recover(FOLLOW_SETS.get("statement"));
             return null;
-        }
         }
         // <editor-fold defaultstate="collapsed" desc="Implementação">
         // sua implementação aqui
