@@ -12,6 +12,8 @@ import java.io.IOException;
 import static edu.citadel.cprl.FirstFollowSets.*;
 import edu.citadel.cprl.ast.*;
 
+//IMPLEMENTADO POR SAMUEL OLIVEIRA LOPES E YAGO MIGUEL NUNES
+
 /**
  * This class uses recursive descent to perform syntax analysis of the CPRL
  * source language.
@@ -511,7 +513,7 @@ public class Parser {
             funcDecl.setInitialDecls(parseInitialDecls());
 
             subprogramContext.beginSubprogramDecl(funcDecl);
-            
+
             funcDecl.setStatementPart(parseStatementPart());
             subprogramContext.endSubprogramDecl();
             idTable.closeScope();
