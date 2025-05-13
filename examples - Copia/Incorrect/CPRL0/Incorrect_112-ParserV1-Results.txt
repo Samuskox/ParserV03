@@ -1,4 +1,0 @@
-Parsing Incorrect_112.cprl...
-*** Syntax error detected near line 1, character 9:
-    Invalid type name.
-Errors detected -- parsing terminated.

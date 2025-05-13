@@ -1,4 +1,0 @@
-Parsing Incorrect_101.cprl...
-*** Syntax error detected near line 7, character 4:
-    Expecting ";" but found "else" instead.
-Errors detected in Incorrect_101.cprl -- parsing terminated.

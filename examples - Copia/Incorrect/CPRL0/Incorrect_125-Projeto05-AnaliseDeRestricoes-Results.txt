@@ -1,4 +1,0 @@
-Starting compilation for Incorrect_125.cprl...
-*** Syntax error detected near line 6, character 4:
-    Return statement is not nested within a subprogram.
-Errors detected in Incorrect_125.cprl -- compilation terminated.

@@ -1,9 +1,0 @@
-type T = array[] of Integer;   // missing array size
-var  a : T;
-
-begin
-
-   a[0] := 1;
-   writeln a[0];
-
-end.

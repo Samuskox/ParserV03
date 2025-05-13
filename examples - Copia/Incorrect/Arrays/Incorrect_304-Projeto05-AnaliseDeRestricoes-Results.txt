@@ -1,7 +1,0 @@
-Starting compilation for Incorrect_304.cprl...
-Checking constraints...
-*** Constraint error detected near line 10, character 8:
-    Type mismatch for left and right operands of a relational expression.
-*** Constraint error detected near line 15, character 8:
-    Type of operands not permitted for a relational expression.
-Errors detected in Incorrect_304.cprl -- compilation terminated.

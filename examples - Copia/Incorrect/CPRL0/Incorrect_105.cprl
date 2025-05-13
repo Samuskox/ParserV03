@@ -1,7 +1,0 @@
-var b : Boolean;
-
-begin  // incorrect9
-
-   b := FALSE;     // false must be all lowercase
-
-end.

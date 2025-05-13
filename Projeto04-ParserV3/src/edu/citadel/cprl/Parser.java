@@ -489,43 +489,47 @@ public class Parser {
 
         // código do parser esperado para o Projeto 03
         try {
-            
-            match( Symbol.functionRW );
+
+            match(Symbol.functionRW);
             Token funcId = scanner.getToken();
-            FunctionDecl functionDecl = new FunctionDecl(funcId);
-            match( Symbol.identifier );
-            idTable.add(functionDecl );
+            match(Symbol.identifier);
+            FunctionDecl funcDecl = new FunctionDecl(funcId);
+            idTable.add(funcDecl);
             idTable.openScope();
             
-            if ( scanner.getSymbol() == Symbol.leftParen ) {
-                functionDecl.setFormalParams(parseFormalParameters());
+
+            if (scanner.getSymbol() == Symbol.leftParen) {
+                funcDecl.setFormalParams(parseFormalParameters());
             }
             
-            match( Symbol.returnRW );
+
+            match(Symbol.returnRW);
+
+            funcDecl.setType(parseTypeName());
+
+            match(Symbol.isRW);
+            funcDecl.setInitialDecls(parseInitialDecls());
+
+            subprogramContext.beginSubprogramDecl(funcDecl);
             
-            functionDecl.setType(parseTypeName());
-            
-            match( Symbol.isRW );
-            functionDecl.setInitialDecls(parseInitialDecls());
-            functionDecl.setStatementPart(parseStatementPart());
-        
-  
+            funcDecl.setStatementPart(parseStatementPart());
+            subprogramContext.endSubprogramDecl();
             idTable.closeScope();
 
             Token procId2 = scanner.getToken();
-            match( Symbol.identifier );
+            match(Symbol.identifier);
 
-            if ( !funcId.getText().equals( procId2.getText() ) ) {
-                throw error( procId2.getPosition(), "Function name mismatch." );
+            if (!funcId.getText().equals(procId2.getText())) {
+                throw error(procId2.getPosition(), "Function name mismatch.");
             }
 
-            match( Symbol.semicolon );
-            return functionDecl;
-            
-        } catch ( ParserException e ) {
-            ErrorHandler.getInstance().reportError( e );
-            recover( FOLLOW_SETS.get( "functionDecl" ) );
+            match(Symbol.semicolon);
 
+            return funcDecl;
+
+        } catch (ParserException e) {
+            ErrorHandler.getInstance().reportError(e);
+            recover(FOLLOW_SETS.get("functionDecl"));
             return null;
         }
         // <editor-fold defaultstate="collapsed" desc="Implementação">

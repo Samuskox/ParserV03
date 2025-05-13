@@ -1,4 +1,0 @@
-Parsing Incorrect_129.cprl...
-*** Syntax error detected near line 1, character 8:
-    Expecting ":=" but found "," instead.
-Errors detected -- parsing terminated.

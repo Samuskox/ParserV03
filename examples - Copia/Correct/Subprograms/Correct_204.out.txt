@@ -1,3 +1,0 @@
-before p:  n = 5
-during p:  n = 6
- after p:  n = 5

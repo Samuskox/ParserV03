@@ -1,4 +1,0 @@
-Parsing Incorrect_104.cprl...
-*** Syntax error detected near line 6, character 13:
-    Identifier "z" has not been declared.
-Errors detected in Incorrect_104.cprl -- parsing terminated.

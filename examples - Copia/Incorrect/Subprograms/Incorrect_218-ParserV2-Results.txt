@@ -1,6 +1,0 @@
-Parsing Incorrect_218.cprl...
-*** Syntax error detected near line 13, character 12:
-    Identifier "inc" is not valid as an expression.
-*** Syntax error detected near line 13, character 17:
-    Expecting ";" but found ")" instead.
-Errors detected in Incorrect_218.cprl -- parsing terminated.

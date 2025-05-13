@@ -1,4 +1,0 @@
-Starting compilation for Incorrect_109.cprl...
-*** Syntax error detected near line 2, character 7:
-    Identifier "x" is already defined in the current scope.
-Errors detected in Incorrect_109.cprl -- compilation terminated.

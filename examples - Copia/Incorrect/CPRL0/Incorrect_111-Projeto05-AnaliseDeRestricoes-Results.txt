@@ -1,4 +1,0 @@
-Starting compilation for Incorrect_111.cprl...
-*** Syntax error detected near line 6, character 4:
-    Exit statement is not nested within a loop.
-Errors detected in Incorrect_111.cprl -- compilation terminated.

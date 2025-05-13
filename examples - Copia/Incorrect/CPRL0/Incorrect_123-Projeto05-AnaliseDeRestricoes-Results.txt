@@ -1,6 +1,0 @@
-Starting compilation for Incorrect_123.cprl...
-*** Lexical error detected near line 8, character 37:
-    Illegal escape character.
-*** Lexical error detected near line 9, character 37:
-    Illegal escape character.
-Errors detected in Incorrect_123.cprl -- compilation terminated.

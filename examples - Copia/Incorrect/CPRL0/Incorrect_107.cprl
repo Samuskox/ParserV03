@@ -1,7 +1,0 @@
-var x : Integer;
-
-begin
-
-   x := true;   // assign Boolean value to an Integer
-
-end.

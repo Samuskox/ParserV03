@@ -1,4 +1,0 @@
-Starting compilation for Incorrect_102.cprl...
-*** Syntax error detected near line 8, character 4:
-    Expecting "." but found ";" instead.
-Errors detected in Incorrect_102.cprl -- compilation terminated.

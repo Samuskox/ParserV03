@@ -1,8 +1,0 @@
-const i := 2;
-var x : Integer;
-
-begin
-
-   x := i;
-
-end;  // semicolon instead of period at the end

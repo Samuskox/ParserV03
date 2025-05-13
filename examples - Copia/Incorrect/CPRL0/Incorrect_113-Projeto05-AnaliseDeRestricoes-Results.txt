@@ -1,4 +1,0 @@
-Starting compilation for Incorrect_113.cprl...
-*** Syntax error detected near line 5, character 4:
-    Identifier "y" has not been declared.
-Errors detected in Incorrect_113.cprl -- compilation terminated.
